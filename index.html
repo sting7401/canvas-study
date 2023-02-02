@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="app">
+
+      <canvas id="canvas" class="w-full h-full"></canvas>
+      
+      <svg>
+        <defs>
+          <filter id="gooey" >
+            <feGaussianBlur stdDeviation="40" in="sourceGraphic" result="blur" />
+            <feColorMatrix in="blur1" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 100 -23" />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
