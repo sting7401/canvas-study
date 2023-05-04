@@ -1,0 +1,38 @@
+html,
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #000;
+}
+
+canvas {
+	background-color: #000;
+	box-sizing: border-box;
+}
+
+#ring {
+	position: absolute;
+	width: 50vh;
+	height: 50vh;
+}
+
+#countdown{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	color: #fff;
+}
+
+#countdown > p{
+	position: absolute;
+	font-size: 7rem;
+	opacity: 0;
+	transform: scale(5);
+}
